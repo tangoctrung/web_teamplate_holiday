@@ -21,6 +21,12 @@
         padding: 30px 30px 30px 30px;
         width: 100%;
     }
+    /* WhatIsNew */
+    .WhatIsNew_description {
+        padding: 30px 30px 30px 30px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }
 
 @media screen and (max-width: 739px) {
@@ -178,21 +184,78 @@
         border-top: none;
         border-bottom: 0.5px solid rgb(180, 118, 2);
     }
-    .content11 h1, .content12 h1 {  
+    .content11 h1, .content12 h1 {
         font-size: 32px;
-      }
-      
-      .content11 h4, .content12 h4 {   
+    }
+    .content11 h4, .content12 h4 {
         margin-top: 10px;
-        margin-left: calc(-9%); 
+        margin-left: calc(-9%);
         font-size: 1.2em;
         color: #ffffff;
         font-family: 'Open Sans', sans-serif;
-      }
-      
-      .content11 p, .content12 p {  
-        margin-top: 0px;      
+    }
+    .content11 p, .content12 p {
+        margin-top: 0px;
         color: #d8d8d8;
         font-size: .9em;
+    }
+    /* WhatIsNew */
+    .WhatIsNew {
+        flex-direction: column;
+    }
+    .WhatIsNew_picture {
+        height: 250px;
+    }
+    .WhatIsNew_description {
+        padding: 40px 20px 0px 20px;
+        margin-bottom: 30px;
+    }
+    .WhatIsNew_text h3 {
+        font-size: 32px;
+    }
+    .WhatIsNew_text h4 {
+        font-size: 1em;
+        font-weight: 800;
+        margin: 2em 0 0 0;
+    }
+    .WhatIsNew_text h5 {
+        font-size: 1em;
+        margin: .5em 0;
+    }
+    .WhatIsNew_text p {
+        font-size: .9em;
+    }
+    /* our gallery */
+    .ourGallery{
+        padding-top: 30px;
       }
+    .ourGalleryContainer {
+        width: 93%;
+    }
+    .ourGalleryContainer h2 {
+        font-size: 2em;      
+        font-weight: 300;
+    }
+    .ourGalleryContentLine1 {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    .ourGalleryPictureBig {
+        width: 100%;
+        margin-bottom: 3px;
+    }
+
+    .ourGalleryPicture1 {
+        width: 100%;
+        margin-bottom: 3px;
+    }
+    .ourGalleryContentLine2 {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    .ourGalleryContentLine3 {
+        flex-direction: column;
+        margin-top: 0px;
+    }
 }

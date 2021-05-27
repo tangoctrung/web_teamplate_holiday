@@ -279,29 +279,32 @@ body {}
   font-weight: 400;
 }
 
-
 .content1 {
   margin-top: 64px;
 }
 
-.content1:hover .content11 h1{
+.content1:hover .content11 h1 {
   color: #23a7f1;
   top: -40px;
 }
-.content2:hover .content12 h1{
+
+.content2:hover .content12 h1 {
   color: #23a7f1;
   top: -40px;
 }
-.OurServices .contentLine1{
-  display: flex;
-  
-}
-.contentLine1{
+
+.OurServices .contentLine1 {
   display: flex;
 }
-.contentLine2{
+
+.contentLine1 {
   display: flex;
 }
+
+.contentLine2 {
+  display: flex;
+}
+
 .content11 {
   position: relative;
   width: 100%;
@@ -316,9 +319,11 @@ body {}
   border-top: 0.5px solid rgb(180, 118, 2);
   border-left: 0.5px solid rgb(180, 118, 2);
 }
-.first{
+
+.first {
   border-left: none;
 }
+
 .content11 h1, .content12 h1 {
   top: 0px;
   position: absolute;
@@ -343,4 +348,207 @@ body {}
   color: #d8d8d8;
   font-size: .9em;
   line-height: 1.8em;
+}
+
+/* what is new */
+
+.WhatIsNew {
+  display: flex;
+}
+
+.WhatIsNew_picture {
+  width: 100%;
+  background: url("../images/7.jpg") no-repeat 0px 0px;
+  background-size: cover;
+}
+
+.WhatIsNew_description {
+  padding: 90px 90px 48px 90px;
+}
+
+.WhatIsNew_text h3 {
+  color: #3a4d60;
+  text-align: left;
+  text-transform: capitalize;
+  font-size: 48px;
+  margin: 0;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.WhatIsNew_text h4 {
+  color: #3a4d60;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin: 3em 0 0 0;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+}
+
+.WhatIsNew_text h5 {
+  color: #3a4d60;
+  font-size: 1.2em;
+  margin: .5em 0;
+  line-height: 1.8em;
+}
+
+.WhatIsNew_text p {
+  color: #3a4d60;
+  font-size: .9em;
+  margin: 0;
+  line-height: 1.8em;
+}
+
+/* our gallery */
+
+.ourGallery {
+  padding-top: 60px;
+  padding-bottom: 50px;
+  background-color: #23a7f1;
+}
+
+.ourGalleryContainer {
+  width: 85%;
+  text-align: center;
+  margin: auto;
+}
+
+.ourGalleryContainer h2 {
+  color: #ffffff;
+  font-size: 3em;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+.ourGalleryContentLine1 {
+  margin-top: 60px;
+  display: flex;
+}
+
+.ourGalleryPictureBig {
+  width: 40%;
+  margin-right: 3px;
+  margin-top: 1px;
+  background-color: #000000;
+}
+
+.ourGalleryPictureBig img:hover {
+  opacity: 0.6;
+}
+
+.ourGalleryPicture1 img:hover {
+  opacity: 0.6;
+}
+
+.ourGalleryPictureBig img {
+  width: 100%;
+  border: 2px solid #fff;
+  opacity: 1;
+  transition: 0.5s all;
+}
+
+.ourGalleryPictureBig img:hover, .ourGalleryPicture1 img:hover {
+  cursor: pointer;
+}
+
+.ourGalleryPicture1 {
+  width: 20%;
+  margin-right: 3px;
+  background-color: #000000;
+  margin-top: 3px;
+}
+
+.ourGalleryPicture1 img {
+  width: 100%;
+  border: 2px solid #fff;
+  opacity: 1;
+  transition: 0.5s all;
+}
+
+.ourGalleryContentLine2 {
+  margin-top: 3px;
+  display: flex;
+}
+
+.ourGalleryContentLine3 {
+  margin-top: 3px;
+  display: flex;
+}
+
+/* ourTeam */
+
+.ourTeam {
+  width: 100%;
+  padding: 60px 0 30px 0;
+}
+
+.ourTeamContainer {
+  width: 90%;
+  margin: auto;
+}
+
+.ourTeamContainer h1 {
+  text-align: center;
+  color: #3a4d60;
+  font-size: 3em;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+.ourTeamListMember {
+  width: 100%;
+  margin-top: 48px;
+}
+
+.ourTeamItemMember {
+  width: 25%;
+}
+
+.ourTeamMemberPicture{
+  position: relative;
+}
+.ourTeamItemMemberInfo{
+  position: absolute;
+  top: 0;
+  background-color: #fb8a2e;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+.ourTeamItemMemberInfo h3{
+
+}
+.ourTeamItemMemberInfo p{
+
+}
+.ourTeamItemMemberInfo i:first-child{
+  font-size: 16px;
+  background-color: #fff;
+  padding: 10px 10px;
+  border-radius: 20px;
+  margin-left: calc(50%);
+}
+
+.ourTeamItemMember img {
+  width: 100%;
+  border-radius: 3px;
+}
+
+.ourTeamItemMember h3 {
+  text-align: center;
+  font-size: 1.5em;
+  color: #3a4d60;
+  margin: 12px 0;
+  text-transform: capitalize;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.ourTeamItemMember p {
+  text-align: center;
+  font-size: 1em;
+  color: #999999;
+  margin-top: -4px;
 }
