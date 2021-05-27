@@ -117,33 +117,82 @@
         width: 100%;
         margin-top: 30px;
     }
-
     /* WhatWeOffer */
-
     .WhatWeOffer {
         flex-direction: column;
-        
     }
     .WhatWeOffer_picture {
         height: 250px;
-        
     }
     .WhatWeOffer_description {
         padding: 40px 20px 0px 20px;
     }
-    .WhatWeOffer_text h3 { 
-        font-size: 32px;    
+    .WhatWeOffer_text h3 {
+        font-size: 32px;
     }
-    .WhatWeOffer_text h4 {     
-        font-size: 1em;      
+    .WhatWeOffer_text h4 {
+        font-size: 1em;
         font-weight: 800;
-        margin: 2em 0 0 0;       
+        margin: 2em 0 0 0;
     }
     .WhatWeOffer_text h5 {
         font-size: 1em;
         margin: .5em 0;
     }
-    .WhatWeOffer_text p {      
+    .WhatWeOffer_text p {
         font-size: .9em;
     }
+    /* our services */
+    .OurServices {
+        margin-top: 30px;
+    }
+    .container>h1 {
+        padding-top: 32px;
+        color: #fff;
+        font-size: 32px;
+        font-weight: 400;
+    }
+    .contentLine1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .contentLine2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .content1 {
+        margin-top: 0px;
+    }
+    .content11 {
+        position: relative;
+        width: 100%;
+        padding: 90px 16px 1px 16px;
+        border-left: none;
+        border-bottom: 0.5px solid rgb(180, 118, 2);
+    }
+    .content12 {
+        position: relative;
+        width: 100%;
+        padding: 90px 16px 1px 16px;
+        border-left: none;
+        border-top: none;
+        border-bottom: 0.5px solid rgb(180, 118, 2);
+    }
+    .content11 h1, .content12 h1 {  
+        font-size: 32px;
+      }
+      
+      .content11 h4, .content12 h4 {   
+        margin-top: 10px;
+        margin-left: calc(-9%); 
+        font-size: 1.2em;
+        color: #ffffff;
+        font-family: 'Open Sans', sans-serif;
+      }
+      
+      .content11 p, .content12 p {  
+        margin-top: 0px;      
+        color: #d8d8d8;
+        font-size: .9em;
+      }
 }
