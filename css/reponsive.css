@@ -27,6 +27,56 @@
         width: 100%;
         margin-bottom: 30px;
     }
+    /* our team */
+    .ourTeamContainer {
+        width: 90%;
+    }
+    .ourTeamItemMemberInfo>h3 {
+        font-size: 16px;
+        font-weight: 400;
+        color: #fff;
+        text-align: center;
+        margin-top: 40%;
+    }
+    .ourTeamItemMemberInfo>p {
+        font-size: 10px;
+        font-weight: 300;
+        color: #fff;
+        text-align: center;
+    }
+    .ourTeamItemMemberInfo .facebook {
+        font-size: 10px;
+        padding: 8px 10px;
+        border-radius: 20px;
+        margin-left: calc(50% - 45px);
+    }
+    .ourTeamItemMemberInfo .twitter {
+        font-size: 10px;
+        padding: 8px 8.5px;
+        border-radius: 20px;
+    }
+    .ourTeamItemMemberInfo .wifi {
+        font-size: 10px;
+        padding: 8px 7.5px;
+        border-radius: 20px;
+    }
+    /* testimonial */
+    .testimonialContainer {
+        width: 90%;
+    }
+    .testimonialText h3 {
+        font-size: 1.5em;
+    }
+    .testimonialText {
+        margin-right: 50px;
+    }
+    .testimonialImage {
+        width: 100%;
+    }
+    /* contact us */
+    .contactUsContainer {
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 739px) {
@@ -96,15 +146,14 @@
         /* display: none; */
         opacity: 0;
         transition: 0.5s all;
+        margin: 0;
     }
     .list_info .item_info {
         width: 100%;
         list-style: none;
         padding: 12px 0 0 0;
     }
-    .list_info li:last-child {
-        margin-bottom: 12px;
-    }
+    
     .list_info .item_info a {
         text-decoration: none;
         font-size: 15px;
@@ -226,14 +275,14 @@
         font-size: .9em;
     }
     /* our gallery */
-    .ourGallery{
+    .ourGallery {
         padding-top: 30px;
-      }
+    }
     .ourGalleryContainer {
         width: 93%;
     }
     .ourGalleryContainer h2 {
-        font-size: 2em;      
+        font-size: 2em;
         font-weight: 300;
     }
     .ourGalleryContentLine1 {
@@ -245,7 +294,6 @@
         width: 100%;
         margin-bottom: 3px;
     }
-
     .ourGalleryPicture1 {
         width: 100%;
         margin-bottom: 3px;
@@ -257,5 +305,172 @@
     .ourGalleryContentLine3 {
         flex-direction: column;
         margin-top: 0px;
+    }
+    /* our team */
+    .ourTeam {
+        width: 100%;
+        padding: 40px 0 20px 0;
+    }
+    .ourTeamContainer {
+        width: 85%;
+        margin: auto;
+    }
+    .ourTeamContainer h1 {
+        font-size: 2em;
+        margin: 0;
+        font-weight: 300;
+    }
+    .ourTeamListMember {
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    .ourTeamItemMember {
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .ourTeamItemMemberInfo .facebook {
+        margin-left: calc(50% - 62px);
+    }
+    .ourTeamItemMember>h3 {
+        font-size: 1.2em;
+        margin: 6px 0;
+    }
+    .ourTeamItemMember>p {
+        font-size: 0.8em;
+        margin-top: 0px;
+    }
+    /* testimonial */
+    .testimonialContainer {
+        width: 90%;
+        margin: auto;
+    }
+    .testimonialContainer>h1 {
+        font-size: 2em;
+    }
+    .testimonialContainer>ul {
+        height: 530px;
+    }
+    .testimonialPage1, .testimonialPage2, .testimonialPage3 {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 60px;
+    }
+    .testimonialText {
+        margin-right: 0px;
+    }
+    .testimonialText h3 {
+        text-align: center;
+        font-size: 1.4em;
+        margin-top: 20px;
+    }
+    .testimonialText p {
+        text-align: center;
+        font-size: .9em;
+    }
+    .testimonialText h4 {
+        text-align: center;
+        font-size: 1em;
+    }
+    .testimonialImage {
+        width: 40%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    .testimonialImage img {
+        width: 100%;
+        border-radius: 50%;
+    }
+    /* contact us */
+    .contactUs {
+        width: 100%;
+        padding: 30px 0 30px 0;
+    }
+    .contactInfo {
+        display: flex;
+        margin-top: 0px;
+        flex-direction: column;
+    }
+    .contactUsContainer {
+        width: 90%;
+        margin: auto;
+    }
+    .contactUsContainer h1 {
+        font-size: 1.8em;
+        margin: 0;
+    }
+    .contactAddress {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .contactAddress h3 {
+        margin-bottom: 1em;
+        margin: 0 0 0 0;
+        font-size: 1.2em;
+    }
+    .contactAddress p {
+        font-size: .7em;
+        line-height: 1.8em;
+    }
+    .contactForm h3 {
+        margin-bottom: 0em;
+    }
+    .contactFormLine1 {
+        display: flex;
+        flex-direction: column;
+        margin-top: -30px;
+    }
+    .contactFormLine2 {
+        display: flex;
+        margin-top: 0px;
+        flex-direction: column;
+    }
+    .contactFormLine3 {
+        margin-top: 60px;
+    }
+    .contactFormName {
+        position: relative;
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .contactFormMessage {
+        margin-left: 0px;
+    }
+    .contactForm button {
+        padding: .4em 2em;
+        margin: 2em 0 0 15px;
+    }
+    .contactLocation iframe {
+        width: 100%;
+        height: 200px;
+    }
+    /* subscribe */
+    .subscribeContainer {
+        display: flex;
+        padding: 15px;
+        flex-direction: column;
+    }
+    .subscribeContainerText {
+        width: 80%;
+        margin: auto;
+    }
+    .subscribeContainerText p {
+        text-align: center;
+        line-height: 20px;
+        font-size: 14px;
+    }
+    .subscribeContainerForm {
+        margin-top: 15px;
+        text-align: center;
+    }
+    /* footer */
+    .footer p {
+        width: 80%;
+        font-size: 12px;
+        margin: auto;
     }
 }

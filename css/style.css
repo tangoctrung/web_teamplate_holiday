@@ -7,12 +7,21 @@ body a {
 }
 
 html, body {
+  scroll-behavior: smooth;
   font-size: 100%;
   font-family: 'Roboto Condensed', sans-serif;
 }
 
 body {}
 
+.home{
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  z-index: 20;
+  bottom: 50px;
+  right: 50px;
+}
 .header {
   background: url("../images/1.png") no-repeat 0px 0px;
   background-size: cover;
@@ -485,7 +494,7 @@ body {}
 }
 
 .ourTeamContainer {
-  width: 90%;
+  width: 60%;
   margin: auto;
 }
 
@@ -501,35 +510,86 @@ body {}
 .ourTeamListMember {
   width: 100%;
   margin-top: 48px;
+  display: flex;
 }
 
 .ourTeamItemMember {
   width: 25%;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-.ourTeamMemberPicture{
+.ourTeamMemberPicture {
   position: relative;
 }
-.ourTeamItemMemberInfo{
+
+.ourTeamItemMemberInfo {
   position: absolute;
   top: 0;
-  background-color: #fb8a2e;
+  background-color: rgba(248, 127, 71, 0.8);
   width: 100%;
   height: 100%;
-  opacity: 0.8;
+  opacity: 0;
+  transition: 0.5s all;
 }
-.ourTeamItemMemberInfo h3{
 
+.ourTeamItemMemberInfo:hover {
+  cursor: pointer;
+  opacity: 1;
 }
-.ourTeamItemMemberInfo p{
 
+.ourTeamItemMemberInfo>h3 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  margin-top: 40%;
 }
-.ourTeamItemMemberInfo i:first-child{
+
+.ourTeamItemMemberInfo>p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+}
+
+.ourTeamItemMemberInfo .facebook {
+  font-size: 16px;
+  background-color: #fff;
+  padding: 10px 14px;
+  border-radius: 20px;
+  margin-left: calc(20%);
+}
+
+.ourTeamItemMemberInfo .twitter {
+  font-size: 16px;
+  background-color: #fff;
+  padding: 10px 11px;
+  border-radius: 20px;
+  /* margin-left: calc(50%); */
+}
+
+.ourTeamItemMemberInfo .wifi {
   font-size: 16px;
   background-color: #fff;
   padding: 10px 10px;
   border-radius: 20px;
-  margin-left: calc(50%);
+  /* margin-left: calc(50%); */
+}
+
+.ourTeamItemMemberInfo .facebook:hover {
+  background: #3b5998;
+  color: #FFFFFF;
+}
+
+.ourTeamItemMemberInfo .twitter:hover {
+  background: #1da1f2;
+  color: #FFFFFF;
+}
+
+.ourTeamItemMemberInfo .wifi:hover {
+  background: #f26522;
+  color: #FFFFFF;
 }
 
 .ourTeamItemMember img {
@@ -537,7 +597,7 @@ body {}
   border-radius: 3px;
 }
 
-.ourTeamItemMember h3 {
+.ourTeamItemMember>h3 {
   text-align: center;
   font-size: 1.5em;
   color: #3a4d60;
@@ -546,9 +606,341 @@ body {}
   font-family: 'Open Sans', sans-serif;
 }
 
-.ourTeamItemMember p {
+.ourTeamItemMember>p {
   text-align: center;
   font-size: 1em;
   color: #999999;
   margin-top: -4px;
+}
+
+/* testimonial */
+
+.testimonial {
+  width: 100%;
+  background: url("../images/3.jpg") no-repeat center 0px;
+  background-size: cover;
+  padding: 48px 0 30px 0;
+}
+
+.testimonialContainer {
+  width: 60%;
+  margin: auto;
+}
+
+.testimonialContainer>ul {
+  padding: 0;
+  position: relative;
+  height: 350px;
+}
+
+.testimonialContainer>h1 {
+  color: #ffffff;
+  font-size: 3em;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+.testimonialPage1, .testimonialPage2, .testimonialPage3 {
+  display: flex;
+  margin-top: 60px;
+  position: absolute;
+}
+
+.testimonialText {
+  margin-right: 120px;
+}
+
+.testimonialText h3 {
+  color: #ffffff;
+  font-size: 1.7em;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+.testimonialText p {
+  color: #FFFFFF;
+  font-size: .9em;
+  margin: 2em 0 0 0;
+  line-height: 1.8em;
+}
+
+.testimonialText h4 {
+  color: #FFFFFF;
+  font-size: 1em;
+  margin: 2em 0 0 0;
+  text-transform: uppercase;
+}
+
+.testimonialImage {
+  width: 40%;
+}
+
+.testimonialImage img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+/* contact Us */
+
+.contactUs {
+  width: 100%;
+  padding: 64px 0 30px 0;
+  
+}
+
+.contactUsContainer {
+  width: 60%;
+  margin: auto;
+}
+
+.contactUsContainer h1 {
+  text-align: center;
+  color: #3a4d60;
+  font-size: 3em;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+.contactInfo {
+  display: flex;
+  margin-top: 48px;
+}
+
+.contactAddress {
+  width: 33%;
+}
+
+.contactAddress h3 {
+  margin-bottom: 2em;
+  color: #3a4d60;
+  margin: 0 0 16px 0;
+  font-size: 1.5em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contactAddress p {
+  margin: 0 0 0 0;
+  color: #999999;
+  font-size: .9em;
+  line-height: 1.5em;
+}
+
+.contactForm {
+  margin-top: 30px;
+}
+
+.contactForm h3 {
+  margin-bottom: 2em;
+  color: #3a4d60;
+  margin: 0 0 1em 0;
+  font-size: 1.5em;
+  font-family: 'Open Sans', sans-serif
+}
+
+.contactFormLine1 {
+  display: flex;
+}
+
+.contactFormLine2 {
+  display: flex;
+  margin-top: 100px;
+}
+
+.contactFormName {
+  position: relative;
+  width: 50%;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.contactFormName label {
+  position: absolute;
+  font-size: 15px;
+  color: #a3a3a3;
+  top: 5px;
+  left: 10px;
+  transition: 0.2s all;
+}
+
+.contactFormName input {
+  width: 100%;
+  position: absolute;
+  outline: none;
+  border: none;
+  border-bottom: 0.2px solid #d4d3d3;
+  padding: 10px 0 0 10px;
+}
+
+.contactFormName input:focus {
+  border-bottom: 2px solid #f26522;
+}
+
+.contactFormName input:focus~label {
+  top: -10px;
+  color: #f26522;
+}
+
+.contactFormLine3 {
+  margin-top: 100px;
+}
+
+.contactFormMessage {
+  position: relative;
+  margin-left: 15px;
+}
+
+.contactFormMessage textarea {
+  min-height: 150px;
+  resize: none;
+  font-size: .9em;
+  color: #999999;
+  padding: 0.5em 1em;
+  border: 0;
+  width: 100%;
+  border-bottom: 1px solid #dcdcdc;
+  background: none;
+  -webkit-appearance: none;
+  outline: none;
+}
+
+.contactFormMessage label {
+  position: absolute;
+  font-size: 15px;
+  color: #a3a3a3;
+  top: 5px;
+  left: 10px;
+  transition: 0.2s all;
+}
+
+.contactFormMessage textarea:focus {
+  border-bottom: 2px solid #f26522;
+}
+
+.contactFormMessage textarea:focus~label {
+  top: -15px;
+  color: #f26522;
+}
+
+.contactForm button{
+    outline: none;
+    color: #FFFFFF;
+    padding: .8em 4em;
+    font-size: .9em;
+    margin: 2em 0 0 15px;
+    -webkit-appearance: none;
+    background: #fb8a2e;
+    border: 2px solid #fb8a2e;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
+    border-radius: 26px;
+    -webkit-border-radius: 26px
+}
+.contactForm button:hover{
+  border: 2px solid #000;
+  background-color: rgba(255, 255, 255, 1);
+  color: #000;
+}
+
+.contactLocation{
+  margin-top: 30px;
+}
+.contactLocation h3{
+  margin-bottom: 2em;
+    color: #3a4d60;
+    margin: 0 0 1em 0;
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+
+}
+.contactLocation iframe{
+  width: 100%;
+  height: 400px;
+}
+
+/* subscribe */
+.subscribe{
+width: 100%;
+background-color: #191d20;
+}
+.subscribeContainer{
+display: flex;
+padding: 15px;
+justify-content: space-around;
+}
+.subscribeContainerText p{
+color: #fff;
+margin: auto;
+line-height: 32px;
+}
+.subscribeContainerForm{
+
+}
+.subscribeContainerForm input{
+padding: 5px 10px;
+outline: none;
+font-size: 14px;
+border: none;
+}
+.subscribeContainerForm button{
+padding: 4px 11px 6px 9px;
+outline: none;
+border: none;
+background-color: #f26522;
+color: #fff;
+transition: 0.5s all;
+}
+.subscribeContainerForm button:hover{
+  cursor: pointer;
+  background-color: #2241f2;
+}
+
+
+/* footer */
+
+.footer{
+  width: 100%;
+  background-color: #0f1215;
+  color: #fff;
+  text-align: center;
+  padding: 40px 0 20px 0;
+}
+
+.footer h3{
+  position: relative;
+  padding: 0 0 30px 0;
+  color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 0 1em 0;
+    font-size: 1em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.footer h3::before{
+  position: absolute;
+  content: "";
+  top: 20px;
+  left: calc(50% - 30px);
+  width:60px;
+  height: 20px;
+  
+  border-bottom: 1px solid #fff;
+}
+.footerSoical{
+  margin-bottom: 30px;
+}
+.footerSoical i{
+  margin-right: 10px;
+  margin-left: 5px;
+  font-size: 15px;
+}
+.footer p{
+  font-size: 14px;
 }
