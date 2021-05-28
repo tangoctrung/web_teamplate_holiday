@@ -8,13 +8,14 @@ body a {
 
 html, body {
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
   font-size: 100%;
   font-family: 'Roboto Condensed', sans-serif;
 }
 
 body {}
 
-.home{
+body>.home{
   position: fixed;
   width: 20px;
   height: 20px;
@@ -937,9 +938,26 @@ transition: 0.5s all;
   margin-bottom: 30px;
 }
 .footerSoical i{
-  margin-right: 10px;
-  margin-left: 5px;
+  margin-right: 5px;
+  margin-left: 0px;
   font-size: 15px;
+  padding: 5px 5px;
+}
+.footerSoical i:hover{
+  cursor: pointer;
+  transform: scale(1.5);
+}
+.footerSoical i:first-child:hover{
+  color: #2241f2;
+}
+.footerSoical i:nth-child(2):hover{
+  color: #4590e6;
+}
+.footerSoical i:nth-child(3):hover{
+  color: #b95149;
+}
+.footerSoical i:last-child:hover{
+  color: #f50909;
 }
 .footer p{
   font-size: 14px;
